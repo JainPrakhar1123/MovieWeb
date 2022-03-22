@@ -8,14 +8,13 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Link to="/">
-      <Card className='sticky-nav'>
+      <Link to="/">
+        <Card className='sticky-nav'>
           <h1 className='text-center m-2'>
             Movie Adda
           </h1>
-      </Card>
+        </Card>
       </Link>
-
       <Routes>
         <Route exact path='/' element={<MoviesPage />} />
         <Route exact path='/bookmovie/:id' element={<MovieBookingPage />} />

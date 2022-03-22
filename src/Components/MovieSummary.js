@@ -5,16 +5,16 @@ import React from "react";
 
 const MovieSummary = (props) => {
 
-    const { name, summary ,img} = props
-    console.log("summary:-",summary);
+    const { name, summary, img } = props
+    console.log("summary:-", summary);
 
     return (
         <div className="text-center">
             <h3 >
-            {name}
+                {name}
             </h3>
             <img alt='movie' width={'30%'} src={img} />
-            <div dangerouslySetInnerHTML={{__html: summary}} className="mt-4">
+            <div dangerouslySetInnerHTML={{ __html: summary }} className="mt-4">
             </div>
         </div>
     )

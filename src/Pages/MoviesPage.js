@@ -43,16 +43,16 @@ const MoviesPage = () => {
     return (
         <Container  >
             <Row>
-            {
-                movies.map((movie) => {
-                    return (
-                        <Col className="mt-4">
-                            <MovieCard key={movie.show.id} movie={movie} />
-                        </Col>
-                    )
+                {
+                    movies.map((movie) => {
+                        return (
+                            <Col className="mt-4">
+                                <MovieCard key={movie.show.id} movie={movie} />
+                            </Col>
+                        )
 
-                })
-            }
+                    })
+                }
             </Row>
         </Container>
     )

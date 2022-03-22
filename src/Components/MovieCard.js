@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const MovieCard = (props) => {
     const { movie } = props
-    console.log("MovieCard Component:-",movie);
+    console.log("MovieCard Component:-", movie);
 
     const navigate = useNavigate()
 
@@ -14,7 +14,7 @@ const MovieCard = (props) => {
         // redirect to the MoviesBookingPage component
         //  and pass the movie
         let movieId = movie.show.id
-        navigate(`/bookmovie/${movieId}`,{state:{movie}})
+        navigate(`/bookmovie/${movieId}`, { state: { movie } })
     }
 
 
