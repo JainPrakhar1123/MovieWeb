@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 //props -> movie
 
+
 const MovieCard = (props) => {
     const { movie } = props
     console.log("MovieCard Component:-", movie);
