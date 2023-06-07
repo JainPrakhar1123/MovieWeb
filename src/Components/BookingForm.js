@@ -26,7 +26,7 @@ const BookingForm = (props) => {
 
     function handleFormSubmit(e) {
         e.preventDefault()
-        // it will stor the user movie booking details in session storage
+        // it will store the user movie booking details in session storage
 
         let movieBookingDetail = {
             MovieName: name,
@@ -59,7 +59,7 @@ const BookingForm = (props) => {
         <>
             {
                 !showForm ?
-                    <Button onClick={handleBookNow} variant="primary" type="submit">
+                    <Button onClick={handleBookNow} variant="secondary" type="submit">
                         Book Now
                     </Button>
                     :

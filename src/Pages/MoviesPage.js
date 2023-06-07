@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import MovieCard from "../Components/MovieCard";
 
-// responcibility ->
+// responibility ->
 
 // 1. get data from API using useEffect
 // and store it in state name movies using
@@ -46,7 +46,7 @@ const MoviesPage = () => {
                 {
                     movies.map((movie) => {
                         return (
-                            <Col className="mt-4">
+                            <Col className="mt-5">
                                 <MovieCard key={movie.show.id} movie={movie} />
                             </Col>
                         )
@@ -57,5 +57,4 @@ const MoviesPage = () => {
         </Container>
     )
 }
-
 export default MoviesPage;

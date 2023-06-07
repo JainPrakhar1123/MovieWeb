@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import '../App.css';
 
 //props -> movie
 
@@ -30,7 +31,7 @@ const MovieCard = (props) => {
                         <br />
                         Status: {movie.show.status}
                     </Card.Text>
-                    <Button variant="primary"
+                    <Button variant="secondary" className="btn"
                         onClick={handleClick}
                     >Show More</Button>
                 </Card.Body>

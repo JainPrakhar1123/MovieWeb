@@ -11,7 +11,7 @@ function App() {
       <Link to="/">
         <Card className='sticky-nav'>
           <h1 className='text-center m-2'>
-            Movie Adda
+            Movie Nation
           </h1>
         </Card>
       </Link>
